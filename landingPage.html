@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pukke Connect</title>
+  <link rel="stylesheet" href="landingPage.css">
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+</head>
+<body>
+    <!-- ===== Top Navigation Bar ===== -->
+    <header class="navbar">
+    <div class="logo">
+        <img src="C:\Users\Sphesihle Sikhosana\Documents\PukkeConnect[]\Images\nwu logo.PNG" 
+            alt="NWU Connect Logo" class="logo-img">
+        <span class="logo-text">Pukke <span class="highlight">Connect</span></span>
+    </div>
+
+    <nav>
+        <a href="#hero">Home</a>
+        <a href="#about-us">About Us</a>
+        <a href="#societies-section">Societies</a>
+        <a href="#footer">Contact</a>
+    </nav>
+
+    <div class="auth-links">
+        <a href="#" id="signInBtn">Sign In</a>
+        <button id="joinNowBtn">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke-width="1.5" stroke="currentColor" class="join-icon">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="M18 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 1 1-6.75 0
+                    3.375 3.375 0 0 1 6.75 0ZM3 19.235v-.11a6.375 6.375 0 0 1 12.75 0v.109A12.318
+                    12.318 0 0 1 9.374 21c-2.331 0-4.512-.645-6.374-1.766Z" />
+        </svg>
+        Join Now
+        </button>
+    </div>
+    <!-- Hamburger Menu Icon -->
+        <button class="menu-toggle" aria-label="Open Menu">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke-width="1.5" stroke="currentColor" class="hamburger-icon">
+            <path stroke-linecap="round" stroke-linejoin="round" 
+                d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+        </svg>
+        </button>
+    </header>
+
+
+  <!-- ===== Hero Section ===== -->
+  <section class="hero" id ="hero">
+    <p class="tagline"><span class ="home-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" />
+        </svg> Connect • Discover • Belong</p>
+    <h1><span class="green">Find Your</span> <span class="gradient">Perfect Society Match</span></h1>
+    <p class="subtext">Join thousands of NWU students connecting with societies, clubs, and organizations that match their passions and goals.</p>
+
+    <div class="stats">
+        <span class = "home-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+        <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
+        </svg>
+        500+ Active Students</span>
+
+        <span class = "home-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+        </svg>
+        50+ Societies</span>
+
+        <span class ="home-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" />
+        </svg>
+        95% Match Success</span>
+    </div>
+
+    <div class="cta-buttons">
+        <button id="getStartedBtn">Get Started Today <span class ="button-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+        </svg>
+        </span></button>
+      <button id="haveAccountBtn" class="outline">I Already Have an Account</button>
+    </div>
+
+    <div class="campus-trust">
+      <p>Trusted by students across all NWU campuses</p>
+      <div class="campuses">
+        <span>Potchefstroom</span>
+        <span>Mahikeng</span>
+        <span>Vanderbijlpark</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Modal for Sign Up ===== -->
+  <div class="modal" id="signupModal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+        <div class="logo">
+            <img src="C:\Users\Sphesihle Sikhosana\Documents\PukkeConnect[]\Images\nwu logo.PNG" alt="NWU Connect Logo" class="logo-img">
+            <span class="logo-text">Pukke <span class="highlight">Connect</span></span>
+        </div>
+        
+      <div class="tabs">
+        <button class="tab active" data-tab="studentForm">Student</button>
+        <button class="tab" data-tab="adminForm">Society Admin</button>
+      </div>
+
+      <!-- Student Form -->
+      <form id="studentForm" class="form-section active">
+        <p>First Name</p>
+        <input type="text" placeholder="Kamogelo" required>
+        <p>Last Name</p>
+        <input type="text" placeholder="Sikhosana" required>
+        <p>NWU Email</p>
+        <input type="email" placeholder="kamo.sikhosana@mynwu.ac.za" required>
+        <p>Student Number</p>
+        <input type="text" placeholder="123456" required>
+        <p>Field of Study</p>
+        <select required>
+          <option disabled selected>Select your field</option>
+          <option>Computer Science</option>
+          <option>Education</option>
+          <!-- Add more -->
+        </select>
+        <p>Campus</p>
+        <select required>
+          <option disabled selected>Select your campus</option>
+          <option>Potchefstroom</option>
+          <option>Mahikeng</option>
+          <option>Vanderbijlpark</option>
+        </select>
+        <p>Password</p>
+        <input type="password" placeholder="Create a strong password" required>
+        <button type="submit" class="form-btn">Create Account</button>
+        <p class="bottom-text">Already have an account? <a href="#">Sign in here</a></p>
+      </form>
+
+      <!-- Society Admin Form -->
+      <form id="adminForm" class="form-section">
+        <p>Society/Organization Name</p>
+        <input type="text" placeholder="e.g NWU Debate Society" required>
+        <p>Your Full Name</p>
+        <input type="text" placeholder="Jane Smith" required>
+        <p>Official Email</p>
+        <input type="email" placeholder="admin@society.nwu.ac.za" required>
+        <p>Your Position</p>
+        <input type="text" placeholder="e.g President, Secretary" required>
+        <p>Society Category</p>
+        <select required>
+          <option disabled selected>Select category</option>
+          <option>Academic</option>
+          <option>Technology</option>
+          <!-- Add more -->
+        </select>
+        <p>Brief Description</p>
+        <textarea placeholder="Tell us about your society..." rows="4"></textarea>
+        <p>Password</p>
+        <input type="password" placeholder="Create a strong password" required>
+        <button type="submit" class="form-btn">Create Account</button>
+        <p class="bottom-text">Already have an account? <a href="#">Sign in here</a></p>
+      </form>
+        </div>
+    </div>
+
+    <!-- ===== Modal for Sign In ===== -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+
+            <!-- Logo -->
+            <div class="logo">
+            <img src="C:\Users\Sphesihle Sikhosana\Documents\PukkeConnect[]\Images\nwu logo.PNG" 
+                alt="NWU Connect Logo" class="logo-img">
+            <span class="logo-text">Pukke <span class="highlight">Connect</span></span>
+            </div>
+
+            <!-- Login Form -->
+            <form id="loginForm" class="form-section active">
+            <p>Email Address</p>
+            <input type="email" placeholder="you@example.com" required>
+
+            <p>Password</p>
+            <input type="password" placeholder="Enter your password" required>
+            <div class="forgot-password">
+                <a href="#" id="forgotPasswordLink">Forgot Password?</a>
+            </div>
+            <button type="submit" class="form-btn">Sign In</button>
+
+            <p class="bottom-text">
+                Don’t have an account? <a href="#" id="openSignup">Sign up here</a>
+            </p>
+           
+            </form>
+        </div>
+    </div>
+
+    <!--ABOUT US SECTION-->
+    <section id="about-us">
+        <h2>About Us</h2>
+        
+        <p>
+            We are a web-based application that intelligently connects NWU students with the right societies using:
+        </p>
+
+        <div class="cards-list">
+        <div class="card">
+            <div class="icon-wrapper">
+            <!-- Heroicon: Puzzle Piece -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="card-icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M14.828 14.828a4 4 0 01-5.656-5.656m6.364-2.121l2.121 2.121a4 4 0 010 5.656l-2.828 2.828a4 4 0 01-5.656-5.656l2.121-2.121" />
+            </svg>
+            </div>
+            <h3>MATCHMAKING ALGORITHMS</h3>
+            <p>The matching system uses an algorithm to connect students with societies that align with their interests, study field, and availability.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon-wrapper">
+            <!-- Heroicon: User Circle -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="card-icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5.121 17.804A7.5 7.5 0 0112 15a7.5 7.5 0 016.879 2.804M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            </div>
+            <h3>PERSONALIZED RECOMMENDATIONS</h3>
+            <p>Each student gets tailored suggestions based on their profile and quiz responses. This ensures more meaningful connections instead of random browsing.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon-wrapper">
+            <!-- Heroicon: Bell Alert -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="card-icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+            </svg>
+            </div>
+            <h3>REAL-TIME UPDATES & EVENTS</h3>
+            <p>Societies post updates instantly and students get notified and stay in the loop, so no more missing out!</p>
+        </div>
+        </div>
+    </section>
+
+
+    <!--SOCIETIES SECTION-->
+    <section class="societies-section" id ="societies-section">
+        <div class="section-header">
+            <h1>Explore Society Categories</h1>
+            <p>Discover societies across different categories and find where your passions align with amazing communities.</p>
+        </div>
+        
+        <div class="categories-container">
+            <!-- Academic Societies -->
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Academic Societies" class="category-image">
+                <div class="category-content">
+                    <h2>Academic Societies</h2>
+                    <p>Enhance your studies with discipline-specific groups and academic excellence clubs.</p>
+                    
+                    <h3>Popular societies:</h3>
+                    <ul class="popular-societies">
+                        <li>Engineering Society</li>
+                        <li>Business Club</li>
+                        <li>Medical Students Association</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Community Service -->
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Community Service" class="category-image">
+                <div class="category-content">
+                    <h2>Community Service</h2>
+                    <p>Make a difference through volunteer work and community outreach programs.</p>
+                    
+                    <h3>Popular societies:</h3>
+                    <ul class="popular-societies">
+                        <li>Community Outreach</li>
+                        <li>Environmental Action</li>
+                        <li>Charity Drive</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Sports & Recreation -->
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1547347298-4074fc3086f0?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Sports & Recreation" class="category-image">
+                <div class="category-content">
+                    <h2>Sports & Recreation</h2>
+                    <p>Stay active and competitive with various sports clubs and fitness groups.</p>
+                    
+                    <h3>Popular societies:</h3>
+                    <ul class="popular-societies">
+                        <li>Rugby Club</li>
+                        <li>Tennis Society</li>
+                        <li>Fitness Enthusiasts</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Music & Performance -->
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Music & Performance" class="category-image">
+                <div class="category-content">
+                    <h2>Music & Performance</h2>
+                    <p>Showcase your talents in music, dance, and performing arts.</p>
+                    
+                    <h3>Popular societies:</h3>
+                    <ul class="popular-societies">
+                        <li>Choir Society</li>
+                        <li>Dance Club</li>
+                        <li>Music Ensemble</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Arts & Culture -->
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Arts & Culture" class="category-image">
+                <div class="category-content">
+                    <h2>Arts & Culture</h2>
+                    <p>Express yourself through creative and cultural organizations.</p>
+                    
+                    <h3>Popular societies:</h3>
+                    <ul class="popular-societies">
+                        <li>Drama Society</li>
+                        <li>Photography Club</li>
+                        <li>Cultural Heritage</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Technology & Innovation -->
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Technology & Innovation" class="category-image">
+                <div class="category-content">
+                    <h2>Technology & Innovation</h2>
+                    <p>Explore cutting-edge technology and innovation with tech-focused societies.</p>
+                    
+                    <h3>Popular societies:</h3>
+                    <ul class="popular-societies">
+                        <li>Coding Club</li>
+                        <li>Robotics Society</li>
+                        <li>Tech Entrepreneurs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!--Explore All Societies Button-->
+        <!--Button Also Opens SignUp Modal When Clicked-->
+        <div class="button-container">
+                    <button id="exploreBtn">
+                Explore All Societies
+                <span class="button-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    </svg>
+                </span>
+            </button>
+        </div>
+
+
+        
+    </section>
+    <!--FOOTER SECTION-->
+    <footer class="footer" id="footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <div class="custom-logo-container">
+                    <img src="C:\Users\Sphesihle Sikhosana\Documents\PukkeConnect[]\Images\nwu logo.PNG" 
+                        alt="NWU Connect Logo" class="custom-logo-img">
+                    
+                    <span class="custom-logo-text">
+                        Pukke <span class="custom-highlight">Connect</span>
+                    </span>
+                    </div>
+
+                <p2>Connecting North-West University students with their perfect society matches through intelligent technology and community building.</p2>
+                <div class="contact-info">
+                    <p>
+                        <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" fill="none" 
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" 
+                                d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25H4.5a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0L12 13.5 2.25 6.75m19.5 0A2.25 2.25 0 0018.75 4.5H5.25a2.25 2.25 0 00-2.25 2.25" />
+                        </svg>
+                        support@pukkeconnect.co.za
+                    </p>
+
+                    <p>
+                        <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" fill="none" 
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" 
+                                d="M2.25 6.75C2.25 6.33579 2.58579 6 3 6H4.5a1.5 1.5 0 011.5 1.5v1.379a2.25 2.25 0 01-.66 1.59l-.72.72a17.999 17.999 0 007.44 7.44l.72-.72a2.25 2.25 0 011.59-.66H18a1.5 1.5 0 011.5 1.5V21a.75.75 0 01-.75.75A18.75 18.75 0 013 3.75.75.75 0 012.25 3v3.75z" />
+                        </svg>
+                        +27 (0) 18 299 1111
+                    </p>
+
+                    <p>
+                        <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" fill="none" 
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" 
+                                d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" 
+                                d="M19.5 10.5c0 7.5-7.5 10.5-7.5 10.5S4.5 18 4.5 10.5a7.5 7.5 0 1115 0z" />
+                        </svg>
+                        North-West University, South Africa
+                    </p>
+                    </div>
+
+            </div>
+            
+            <div class="footer-links">
+                <div class="links-column">
+                    <h3>Platform</h3>
+                    <ul>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">Society Categories</a></li>
+                        <li><a href="#">Success Stories</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="links-column">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Report Issue</a></li>
+                        <li><a href="#">Community Guidelines</a></li>
+                    </ul>
+                </div>
+                
+                <div class="links-column">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Data Protection</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="copyright">
+                <p>© 2024   Pukke Connect. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+  <!--JS Code -->
+<script>
+//===Toggle Menu Functionality
+document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav');
+        
+        menuToggle.addEventListener('click', function() {
+            nav.classList.toggle('active');
+        });
+        
+        // Close menu when a nav link is clicked (optional)
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('active');
+            });
+        });
+    });
+
+// ===== Open Modal on Button Click =====
+document.getElementById("joinNowBtn").onclick = () => {
+  document.getElementById("signupModal").style.display = "flex";
+};
+
+document.getElementById("getStartedBtn").onclick = () => {
+  document.getElementById("signupModal").style.display = "flex";
+};
+
+document.querySelector(".close-btn").onclick = () => {
+  document.getElementById("signupModal").style.display = "none";
+};
+
+//========= LogIn Modal
+// Function to open login modal
+function openLoginModal() {
+    document.getElementById("loginModal").style.display = "flex";
+}
+// Sign In link click
+document.getElementById("signInBtn").addEventListener("click", function(event) {
+    event.preventDefault();
+    openLoginModal();
+});
+// Get modal and close button elements
+const loginModal = document.getElementById("loginModal");
+const closeBtn = loginModal.querySelector(".close-btn");
+
+// Close modal function
+function closeLoginModal() {
+  loginModal.style.display = "none";
+}
+
+// Close modal when close button is clicked
+closeBtn.addEventListener("click", closeLoginModal);
+
+// Optional: Close modal when clicking outside the modal content
+window.addEventListener("click", function(event) {
+  if (event.target === loginModal) {
+    closeLoginModal();
+  }
+});
+// Open login modal when "I Already Have an Account" button is clicked
+document.getElementById("haveAccountBtn").addEventListener("click", function(event) {
+    event.preventDefault();
+    openLoginModal();
+});
+//Already Have An Account
+document.querySelector(".bottom-text a").addEventListener("click", function(event) {
+    event.preventDefault();
+    openLoginModal();
+    // Close signup modal
+    const signupModal = document.getElementById("signupModal");
+    if (signupModal) {
+        signupModal.style.display = "none";
+    }
+});
+//Dont Have An Account
+document.getElementById("openSignup").addEventListener("click", function(event) {
+    event.preventDefault();
+    // Open signup modal
+    const signupModal = document.getElementById("signupModal");
+    if (signupModal) {
+        signupModal.style.display = "flex";
+    }
+    // Close login modal
+    const loginModal = document.getElementById("loginModal");
+    if (loginModal) {
+        loginModal.style.display = "none";
+    }
+});
+
+
+
+
+
+
+// ===== Tabs for Student / Society Admin =====
+const tabs = document.querySelectorAll(".tab");
+const forms = document.querySelectorAll(".form-section");
+
+tabs.forEach((tab, index) => {
+  tab.addEventListener("click", () => {
+    tabs.forEach(t => t.classList.remove("active"));
+    forms.forEach(f => f.classList.remove("active"));
+
+    tab.classList.add("active");
+    forms[index].classList.add("active");
+  });
+});
+
+// ===== Explore All Societies Button Functionalitiy =====
+document.getElementById("exploreBtn").addEventListener("click", function() {
+    document.getElementById("signupModal").style.display = "flex";
+});
+
+document.getElementById("closeModal").addEventListener("click", function() {
+    document.getElementById("signupModal").style.display = "none";
+});
+
+
+</script>
+</body>
+</html>
