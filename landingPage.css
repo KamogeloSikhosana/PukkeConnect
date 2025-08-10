@@ -147,13 +147,13 @@ a#signInBtn:hover {
 
 @media (max-width: 768px) {
   .hero h1 {
-    font-size: 30px;
+    font-size: 20px;
   }
 .subtext {
     max-width: 600px;
     margin: 0 auto 1.5rem;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 15px;
 }
 }
 
@@ -861,4 +861,5 @@ p2{
         
         
         
+
         
