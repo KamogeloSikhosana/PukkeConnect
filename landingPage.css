@@ -194,7 +194,7 @@ a#signInBtn:hover {
 
 /* Hero */
 .hero {
-  height: 110vh; 
+  height: 100vh; 
   display: flex; 
   flex-direction: column;
   justify-content: center; 
@@ -211,7 +211,7 @@ a#signInBtn:hover {
 }
 
 .hero h1 {
-  font-size: 80px;
+  font-size: 12px;
   margin: 20px;
 }
 
@@ -242,7 +242,7 @@ a#signInBtn:hover {
   max-width: 600px;
   margin: 0 auto 1.5rem;
   color: #ffffff;
-  font-size:24px;
+  font-size:15px;
 }
 
 .stats span {
@@ -863,3 +863,4 @@ p2{
         
 
         
+
