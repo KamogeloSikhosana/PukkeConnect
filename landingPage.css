@@ -147,13 +147,13 @@ a#signInBtn:hover {
 
 @media (max-width: 768px) {
   .hero h1 {
-    font-size: 20px;
+    font-size: 40px;
   }
 .subtext {
     max-width: 600px;
     margin: 0 auto 1.5rem;
     color: #ffffff;
-    font-size: 15px;
+    font-size: 20px;
 }
 }
 
@@ -212,7 +212,7 @@ a#signInBtn:hover {
 
 .hero h1 {
   font-size: 12px;
-  margin: 20px;
+  margin: 80px;
 }
 
 .hero .green {
@@ -242,7 +242,7 @@ a#signInBtn:hover {
   max-width: 600px;
   margin: 0 auto 1.5rem;
   color: #ffffff;
-  font-size:15px;
+  font-size:30px;
 }
 
 .stats span {
@@ -863,4 +863,5 @@ p2{
         
 
         
+
 
