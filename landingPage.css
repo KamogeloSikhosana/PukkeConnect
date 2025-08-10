@@ -1,0 +1,848 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom:0px;
+}
+.logo2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom:20px;
+}
+
+.logo-img {
+  height: 50px;
+  width: auto;
+  margin-right:5px;
+}
+.logo-text {
+    font-family: 'Bodoni MT Poster Compressed', serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.logo-text .highlight {
+    font-family: 'Bodoni MT Poster Compressed', serif;
+    color: #8e44ad; 
+}
+
+
+.navbar nav a {
+  margin: 0 1rem;
+  color: #444;
+  text-decoration: none;
+  text-align:center;
+}
+nav.nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  nav.nav-links a {
+    text-decoration: none;
+    color: #333;
+  }
+
+.auth-links a,
+.auth-links button {
+  margin-left: 1rem;
+}
+
+a#signInBtn {
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    margin-top:10px;
+}
+a#signInBtn:hover {
+  color: #9c81db; 
+}
+#joinNowBtn{
+  background: #9c81db;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight:600;
+  margin-left:1rem;
+}
+#joinNowBtn .join-icon {
+  width: 18px;
+  height: 18px;
+  stroke: white;
+  vertical-align: middle;
+}
+
+/* Hide hamburger by default */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger-icon {
+  width: 28px;
+  height: 28px;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    @media (max-width: 768px) {
+    nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        flex-direction: column;
+        padding: 1rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    nav a {
+        padding: 0.5rem 1rem;
+    }
+
+    .auth-links {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+
+  nav {
+    display: none; /* Hide main nav links */
+  }
+
+  #signInBtn,
+  #joinNowBtn {
+    display: none; /* Hide sign in and join now */
+  }
+
+  .menu-toggle {
+    display: inline-flex; /* Show hamburger icon */
+    align-items: center;
+    justify-content: center;
+  }
+}
+/* For larger screens */
+@media (min-width: 769px) {
+    .menu-toggle {
+        display: none;
+    }
+    
+    nav {
+        display: flex;
+    }
+    
+    .auth-links {
+        display: flex;
+    }
+}
+
+
+/*End Of Nav Bar */
+
+
+/* Hero */
+.hero {
+  height: 100vh; 
+  display: flex; 
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;     
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(135deg, #8a41e9, #f4f9fc);
+}
+
+.hero .tagline {
+  font-size: 17px;
+  color: #ffffff;
+  font-weight:600;
+}
+
+.hero h1 {
+  font-size: 80px;
+  margin: 20px;
+}
+
+.hero .green {
+  color: #ffffff;
+}
+
+.hero .gradient {
+  background: linear-gradient(to right, #00704a00, #9c81db);
+}
+
+/* ICONS STYLING */
+.home-icon svg {
+  width: 25px;   
+  height: 25px;
+  stroke: #ffffff;  
+  margin-right:3px;
+  vertical-align: middle;
+}
+.button-icon svg {
+  width: 19px;   
+  height: 19px;
+  stroke: #8a41e9;  
+  vertical-align: middle;
+}
+
+.subtext {
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+  color: #ffffff;
+  font-size:24px;
+}
+
+.stats span {
+  margin: 0 1rem;
+  font-weight: 500;
+  color: #333;
+  font-size:17px;
+}
+
+.cta-buttons {
+  margin-top: 1.5rem;
+}
+
+.cta-buttons button {
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  font-weight: 600;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+#getStartedBtn {
+  background: #ffffff;
+  color: #8a41e9;
+  gap:6px;
+  border: none;
+}
+#getStartedBtn:hover .button-icon svg {
+    transform: translateX(5px); 
+}
+#getStartedBtn:hover {
+    transform: translateY(-2px);
+}
+
+.outline {
+  border: 2px solid #ffffff;
+  background: none;
+  color: #ffffff;
+}
+
+.campus-trust {
+  margin-top: 2rem;
+}
+
+.campuses span {
+  margin: 0 0.5rem;
+  font-weight: 600;
+  color: #1a3473;
+}
+
+.campuses .active {
+  color: #1a3473;
+}
+
+/* ===== Modal Styling ===== */
+/*SignUP Modal */
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  overflow-y: auto;
+  max-height: 90vh;
+}
+p {
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color:#565657;
+}
+h2 {
+    font-size: 21px;
+    font-weight: normal;
+    text-align: center;
+}
+.close-btn {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem 0;
+    background-color: #ebebeb;
+    padding: 5px;
+    border-radius: 12px;
+}
+
+.tab {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border: none;
+  background: #eee;
+  border-radius: 5px;
+  font-weight:600;
+}
+
+.tab.active {
+  background: #9c81db;
+  color: white;
+  padding-right: 60px;
+  padding-left: 60px;
+}
+
+.form-section {
+  display: none;
+  flex-direction: column;
+}
+
+.form-section.active {
+  display: flex;
+}
+
+form input,
+form select,
+form textarea {
+  margin-bottom: 1rem;
+  padding: 0.7rem;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+}
+
+.form-btn {
+  padding: 0.8rem;
+  background: #9c81db;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+a {
+    text-decoration: none;
+    color: #8a41e9;
+}
+.bottom-text {
+  font-size: 0.85rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/*SignIn Modal */
+/* Reuse existing modal styles */
+#loginModal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#loginModal .modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+}
+
+#loginModal p {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color:#565657;
+}
+
+#loginModal h2 {
+  font-size: 21px;
+  font-weight: normal;
+  text-align: center;
+}
+
+#loginModal .close-btn {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+#loginModal form input {
+  margin-bottom: 1rem;
+  padding: 0.7rem;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+}
+
+#loginModal .form-btn {
+  padding: 0.8rem;
+  background: #9c81db;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.forgot-password {
+    text-align: right;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+#loginModal a {
+  text-decoration: none;
+  color: #8a41e9;
+}
+
+#loginModal .bottom-text {
+  font-size: 0.85rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/*ABOUT US SECTION */
+#about-us {
+  font-family: Arial, sans-serif;
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+#about-us h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 32px;
+  margin-bottom: 10px;
+  color:#333;
+}
+p1{
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 40px;
+  color:#565657;
+}
+#about-us p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.cards-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  max-width: 900px;
+  margin: 0 auto 60px;
+}
+
+.card {
+  background: #fff;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+  border-radius: 15px;
+  padding: 25px 20px;
+  flex: 1 1 280px;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.icon-wrapper {
+  background: #9c81db;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-icon {
+  width: 32px;
+  height: 32px;
+  stroke: white;
+}
+
+.card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #222;
+}
+
+.card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 650px) {
+  .cards-list {
+    flex-direction: column;
+    gap: 25px;
+  }
+}
+
+
+#about-us h3 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 17px;
+  margin-bottom: 15px;
+  color:#9c81db;
+}
+
+
+/*SOCIETIES SECTION */
+/* Section Styling */
+.societies-section {
+  padding: 60px 20px;
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-header h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.section-header p {
+  color: #666;
+  font-size: 16px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Categories Container */
+.categories-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+/* Category Card */
+.category-card {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Category Image */
+.category-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Content */
+.category-content {
+  padding: 20px;
+}
+
+.category-content h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #9c81db;
+  margin-bottom: 8px;
+}
+
+.category-content p {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.category-content h3 {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+/* Popular Societies List */
+.popular-societies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.popular-societies li {
+  background: #fff;
+  border: 2px solid #9c81db;
+  border-radius: 50px; 
+  padding: 6px 14px;
+  font-size: 13px;
+  color: #9c81db;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.popular-societies li:hover {
+  background: #9c81db;
+  color: white;
+}
+
+/*Explore All Societies Button */
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+#exploreBtn {
+    background-color: #9c81db;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 20px;;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top:20px;
+    display: flex;
+    justify-content: center;
+}
+
+#exploreBtn:hover {
+    background-color: #814cc5; 
+    transform: translateY(-2px);
+}
+
+#exploreBtn .button-icon svg {
+    height: 20px;
+    width: 20px;
+    stroke: white;
+    transition: transform 0.3s ease;
+}
+
+#exploreBtn:hover .button-icon svg {
+    transform: translateX(5px); 
+}
+
+
+
+/*FOOTER SECTION */
+.footer {
+            background-color: #9c81db;
+            color: white;
+            padding: 50px 4%;
+            width: 100%;
+        }
+        
+        .footer-top {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+p2{
+    font-weight:600;
+}       
+        .footer-brand {
+            flex: 1;
+            min-width: 300px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-brand h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #3498db;
+        }
+        
+        .footer-brand p {
+            max-width: 350px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+.contact-info p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  margin: 8px 0;
+  color:white;
+}
+
+.contact-icon {
+  width: 20px;
+  height: 20px;
+  color: #ffffff;
+  flex-shrink: 0;
+}
+
+        
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+        
+        .links-column {
+            min-width: 150px;
+        }
+        
+.links-column h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+        
+.links-column ul {
+    list-style: none;
+}
+        
+.links-column li {
+    margin-bottom: 12px;
+}
+        
+.links-column a {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+        
+.links-column a:hover {
+    color:#2c3e50;
+}
+        
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+        
+.copyright {
+    margin-bottom: 15px;
+}
+        
+.windows-activate {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+}
+ .custom-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-bottom:10px;
+}
+
+.custom-logo-img {
+  height: 50px;
+  width: auto;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
+.custom-logo-text {
+  font-family: 'Bodoni MT Poster Compressed', serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.custom-logo-text .custom-highlight {
+  font-family: 'Bodoni MT Poster Compressed', serif;
+  color: #8e44ad;
+}
+       
+        
+        
+        
+        
